@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Some Website</title>
+    </head>
+    <body>
+        {{> header}}
+        <p>
+            {{screamIt welcomeMsg}}
+        </p>
+        <p>
+            {{name}} likes:
+        </p>
+        <p>
+            <ul class="likes_list">
+                {{#each likes}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </p>
+        {{> footer}}
+    </body>
+</html>
